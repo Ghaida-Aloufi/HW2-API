@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #01523f;
+}
+
+.btn {
+  background-color: #ffc529;
+  border: none;
+  width: 51vh;
+  padding: 10px;
+  border-radius: 1vh;
+  font-size: 2vh;
+  margin-top: 10px;
+  font-weight: 500;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.username,
+.email {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: #01523f;
+  width: 50vh;
+  ;
+}
+
+.name,
+.emai-text {
+  color: white;
+}
+
+.username {
+  border-bottom-color: #ffc529;
+}
+
+.email {
+  border-bottom-color: white;
+}
+
+.box {
+  display: flex;
+}
+
+.contener {
+  display: flex;
+  flex-direction: column;
+  width: 100vh;
+  height: auto;
+  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.contener2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 40vh;
+
+}
+
+.welcome {
+  color: white;
+  font-size: 10vh;
+  font-family: "Sofadi One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50vh;
+  height: 35vh;
+}
+
+.text {
+  color: white;
+  display: flex;
+  justify-content: end;
+  font-weight: 500;
+  list-style: none;
+  text-decoration: none;
+
+}
+
+.img2style {
+  width: 30%;
+  height: 20%;
+}
+
+.box-right-side {
+  display: flex;
+  width: 70vh;
+  justify-content: center;
+}
