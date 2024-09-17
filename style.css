@@ -51,6 +51,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 60vh;
+  margin-top: 10px;
 }
 
 .name {
