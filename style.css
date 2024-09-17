@@ -5,107 +5,176 @@
 }
 
 body {
-  background-color: #01523f;
-}
-
-.btn {
-  opacity: 0.3;
-  border: none;
-  width: 51vh;
-  padding: 10px;
-  border-radius: 1vh;
-  font-size: 2vh;
-  margin-top: 10px;
-  font-weight: 500;
+  background-image: url("img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.btn:hover {
-  background-color: #ffc529;
+/* الأزرار */
+.btn {
   opacity: 0.8;
+  border: none;
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 2.5vh;
+  margin-top: 20px;
+  font-weight: 500;
+  background-color: rgb(246, 220, 147);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #fbe3a2;
 }
 
 .username,
-.email {
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  background-color: #01523f;
-  width: 50vh;
-  ;
+.pass {
+  border: none;
+  border-bottom: 2px solid;
+  background-color: transparent;
+  width: 100%;
+  padding: 10px;
+  font-size: 2vh;
+  border-bottom-color: rgb(156, 154, 154);
 }
 
-.name,
-.emai-text {
-  color: white;
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vh;
 }
 
-.username {
-  border-bottom-color: #ffc529;
+.name {
+  font-size: 2.5vh;
 }
 
-.email {
-  border-bottom-color: white;
-}
-
+/* حاويات */
 .box {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
 }
 
 .contener {
   display: flex;
   flex-direction: column;
-  width: 100vh;
-  height: auto;
-  justify-content: space-evenly;
+  width: 50%;
+  height: 65%;
+  max-width: 500px;
+  padding: 20px;
   justify-content: center;
   align-items: center;
-
+  background-color: rgba(128, 128, 128, 0.8);
+  border-radius: 10px;
 }
 
 .contener2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 40vh;
-
+  gap: 10px;
 }
 
 .welcome {
-  color: white;
-  font-size: 10vh;
-  font-family: "Sofadi One", system-ui;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-style: normal;
+  text-align: center;
+  font-size: 5vh;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 3vh;
+}
+
+.text {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 7px;
+}
+
+.textbtn {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 3vh;
 }
 
 .card {
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
-  width: 50vh;
-  height: 35vh;
+  flex-direction: column;
+  width: 100%;
+  height: 50vh;
 }
 
-.text {
-  color: white;
-  display: flex;
-  justify-content: end;
-  font-weight: 500;
-  list-style: none;
-  text-decoration: none;
+/* استجابة التصميم للأحجام المختلفة */
+@media (max-width: 768px) {
+  .welcome {
+    font-size: 6vh;
+  }
 
+  .btn {
+    font-size: 2vh;
+  }
+
+  .contener {
+    width: 90%;
+  }
+
+  .flex {
+    width: 80%;
+  }
 }
 
-.img2style {
-  width: 30%;
-  height: 20%;
+@media (max-width: 480px) {
+  .welcome {
+    font-size: 5vh;
+  }
+
+  .btn {
+    font-size: 1.8vh;
+  }
+
+  .flex {
+    width: 70%;
+  }
+
+  .contener {
+    height: 75%;
+    width: 95%;
+  }
 }
 
-.box-right-side {
-  display: flex;
-  width: 70vh;
-  justify-content: center;
+/* للأجهزة الصغيرة جداً */
+@media (max-width: 320px) {
+  .welcome {
+    font-size: 4vh;
+  }
+
+  .btn {
+    font-size: 1.5vh;
+  }
+
+  .flex {
+    width: 60%;
+  }
+
+  .contener {
+    height: 80%;
+    width: 100%;
+  }
 }
