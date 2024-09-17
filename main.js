@@ -30,7 +30,7 @@ btn.addEventListener("click", (event) => {
       console.log(json);
 
       if (json.success || json.username === username.value) {
-        localStorage.setItem('username', username.value.length);
+        localStorage.setItem('username', username.value);
         window.location.href = "page3.html";
       } else {
         alert("Login failed. Please check your username and password.");
